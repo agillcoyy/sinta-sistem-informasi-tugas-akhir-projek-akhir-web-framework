@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* Tema Energetic & Cultural (Maroon & Kuning/Emas) */
+    --color-indigo-50: #fffde6;
+    /* Light Gold tint untuk aksen */
+    --color-indigo-100: #fff9c4;
+    --color-indigo-200: #fff59d;
+    --color-indigo-500: #ffd700;
+    /* Kuning Emas */
+    --color-indigo-600: #800000;
+    /* Merah Maroon */
+    --color-indigo-700: #660000;
+    /* Maroon Gelap */
+    --color-indigo-850: #4a0000;
+    --color-indigo-900: #330000;
+
+    --color-blue-50: #fffde6;
+    --color-blue-500: #ffd700;
+    /* Kuning Emas */
+    --color-blue-600: #e6c200;
+    --color-blue-700: #cca300;
+
+    /* Background & Text */
+    --color-slate-50: #fafafa;
+    /* Off-white */
+    --color-slate-800: #333333;
+    /* Charcoal */
+}

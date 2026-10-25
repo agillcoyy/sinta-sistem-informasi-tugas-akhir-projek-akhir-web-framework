@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Dosen extends Model
+{
+    protected $fillable = ['user_id', 'nip', 'nama_lengkap', 'bidang_keahlian'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function tugasAkhirs()
+    {
+        return $this->hasMany(TugasAkhir::class);
+    }
+
+    public function sidangs()
+    {
+        return $this->hasMany(Sidang::class, 'dosen_penguji_id');
+    }
+}
